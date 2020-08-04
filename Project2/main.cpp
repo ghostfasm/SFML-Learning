@@ -5,6 +5,5 @@ int main()
     Game game;
     game.run();
 
-    // test
     return 0;
 }
