@@ -1,6 +1,6 @@
 #include "GameState.h"
 
-GameState::GameState(sf::RenderWindow* window, std::map<std::string, int> * supportedKeys, std::stack<State*>* states)
+GameState::GameState(sf::RenderWindow * window, std::map<std::string, int> * supportedKeys, std::stack<State *> * states)
 	: State(window, supportedKeys, states)
 {
 	this->initKeybinds();
@@ -49,7 +49,7 @@ void GameState::initKeybinds()
 {
 	std::ifstream ifs("Config/gamestate_keybinds.ini");
 
-	if ( ifs.is_open() )
+	if (ifs.is_open())
 	{
 		std::string key = "";
 		std::string key2 = "";

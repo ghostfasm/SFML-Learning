@@ -2,7 +2,7 @@
 
 int Cfib(int n)
 {
-	if ( n < 2 )
+	if (n < 2)
 		return n;
 	else
 		return Cfib(n - 1) + Cfib(n - 2);
@@ -12,7 +12,7 @@ static PyObject * fib(PyObject * self, PyObject * args)
 {
 	int n;
 
-	if ( !PyArg_ParseTuple(args, "i", &n)) 
+	if (!PyArg_ParseTuple(args, "i", &n)) 
 		return NULL;
 
 	return Py_BuildValue("i", Cfib(n));

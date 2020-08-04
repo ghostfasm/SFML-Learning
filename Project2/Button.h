@@ -22,8 +22,8 @@ private:
 	short unsigned buttonState;
 
 	sf::RectangleShape shape;
-	sf::Font *		   font;
-	sf::Text		   text;
+	sf::Font *		    font;
+	sf::Text		       text;
 
 	sf::Color idleColor;
 	sf::Color hoverColor;

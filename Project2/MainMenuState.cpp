@@ -15,6 +15,7 @@ void MainMenuState::initBackground()
 			static_cast<float>(this->window->getSize().y)
 		)
 	);
+
 	if (!this->backgroundTexture.loadFromFile("Resources/Images/Backgrounds/bg.png"))
 	{
 		throw "ERROR::MAINMENUSTATE::FAILED_TO_LOAD_BACKGROUND_TEXTURE";
@@ -25,7 +26,7 @@ void MainMenuState::initBackground()
 
 void MainMenuState::initFonts()
 {
-	if ( !this->font.loadFromFile("Fonts/PressStart2P.ttf") )
+	if (!this->font.loadFromFile("Fonts/PressStart2P.ttf"))
 	{
 		throw("ERROR::MAINMENUSTATE::COULD NOT LOAD FONT");
 	}
@@ -35,7 +36,7 @@ void MainMenuState::initKeybinds()
 {
 	std::ifstream ifs("Config/mainmenustate_keybinds.ini");
 
-	if ( ifs.is_open() )
+	if (ifs.is_open())
 	{
 		std::string key  = "";
 		std::string key2 = "";

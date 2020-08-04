@@ -54,12 +54,12 @@ void Game::initWindow()
 {
     std::ifstream ifs("Config/window.ini");
     this->videoModes = sf::VideoMode::getFullscreenModes();
-
-    std::string title = "None";
     sf::VideoMode windowBounds = sf::VideoMode::getDesktopMode();
-    bool fullscreen = false;
-    unsigned framerateLimit = 120;
-    bool verticalSyncEnabled = false;
+
+    std::string title           = "None";
+    bool fullscreen             = false;
+    unsigned framerateLimit     = 120;
+    bool verticalSyncEnabled    = false;
     unsigned antialiasing_level = 0;
 
     if (ifs.is_open())
@@ -75,7 +75,7 @@ void Game::initWindow()
     ifs.close();
 
     this->windowSettings.antialiasingLevel = antialiasing_level;
-    this->fullscreen = fullscreen;
+    this->fullscreen                       = fullscreen;
     
     if (this->fullscreen)
         this->window = new sf::RenderWindow(sf::VideoMode(windowBounds), title, sf::Style::Fullscreen, windowSettings);

@@ -21,8 +21,8 @@ class Entity
 private:
 
 protected:
-	sf::RectangleShape	shape;
-	float				movementSpeed;
+	sf::RectangleShape shape;
+	float				    movementSpeed;
 
 public:
 	Entity();

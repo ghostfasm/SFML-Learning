@@ -8,10 +8,10 @@ class State
 private:
 
 protected:
-	std::stack<State*> *		states;
-	sf::RenderWindow *			window;
+	std::stack<State *> *		  states;
+	sf::RenderWindow *		 	  window;
 	std::map<std::string, int> * supportedKeys;
-	std::map<std::string, int>	 keybinds;
+	std::map<std::string, int>	  keybinds;
 
 	bool quit;
 
@@ -26,7 +26,7 @@ protected:
 	virtual void initKeybinds() = 0;
 
 public:
-	State(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*>* states);
+	State(sf::RenderWindow * window, std::map<std::string, int> * supportedKeys, std::stack<State*>* states);
 	virtual ~State();
 
 	// Functions
@@ -36,8 +36,9 @@ public:
 
 	// Update
 	virtual void updateMousePositions();
+
 	virtual void updateInput(const float & dt) = 0;
-	virtual void update(const float & dt) = 0;
+	virtual void update(const float & dt)		 = 0;
 
 	// Render
 	virtual void render(sf::RenderTarget * target = nullptr) = 0;

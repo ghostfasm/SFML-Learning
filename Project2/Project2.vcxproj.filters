@@ -18,6 +18,9 @@
     <Filter Include="Entities">
       <UniqueIdentifier>{de04650c-941b-4e83-b0c8-6668af338010}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{22575c83-017a-4f62-8e5c-2763fd79f532}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
