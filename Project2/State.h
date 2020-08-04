@@ -8,10 +8,10 @@ class State
 private:
 
 protected:
-	std::stack<State *> *		 states;
-	sf::RenderWindow *		 	 window;
+	std::stack<State *> *        states;
+	sf::RenderWindow *           window;
 	std::map<std::string, int> * supportedKeys;
-	std::map<std::string, int>	 keybinds;
+	std::map<std::string, int>   keybinds;
 
 	bool quit;
 

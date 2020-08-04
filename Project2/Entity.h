@@ -19,7 +19,6 @@
 class Entity
 {
 private:
-
 protected:
 	sf::RectangleShape shape;
 	float			   movementSpeed;
