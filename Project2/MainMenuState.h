@@ -9,9 +9,9 @@ class MainMenuState :
 {
 private:
 	// Variables
-	sf::Texture		   backgroundTexture;
+	sf::Texture        backgroundTexture;
 	sf::RectangleShape background;
-	sf::Font		   font;
+	sf::Font           font;
 
 	//Button * gamestate_btn;
 	std::map<std::string, Button *> buttons;
