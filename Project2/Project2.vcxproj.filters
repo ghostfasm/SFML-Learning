@@ -18,9 +18,6 @@
     <Filter Include="Entities">
       <UniqueIdentifier>{de04650c-941b-4e83-b0c8-6668af338010}</UniqueIdentifier>
     </Filter>
-    <Filter Include="NewFilter1">
-      <UniqueIdentifier>{22575c83-017a-4f62-8e5c-2763fd79f532}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Components">
       <UniqueIdentifier>{752a5eb6-06bf-4f9a-9900-7b86cabe5997}</UniqueIdentifier>
     </Filter>
