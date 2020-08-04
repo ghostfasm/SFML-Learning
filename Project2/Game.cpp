@@ -24,7 +24,7 @@ void Game::initVaritales()
     this->window     = nullptr;
     this->fullscreen = false;
 
-    this->dt = 0.1f;
+    this->dt = 5.f;
 }
 
 void Game::initKeys()

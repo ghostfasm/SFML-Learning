@@ -16,13 +16,13 @@ GameState::~GameState()
 void GameState::updateInput(const float & dt)
 {
 	// Update player input
-	if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("MOVE_LEFT"))) )
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("MOVE_LEFT"))) )
 		this->player->move(dt, -1.f, 0.f);
-	if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("MOVE_RIGHT"))) )
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("MOVE_RIGHT"))) )
 		this->player->move(dt, 1.f, 0.f);
-	if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("MOVE_UP"))) )
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("MOVE_UP"))) )
 		this->player->move(dt, 0.f, -1.f);
-	if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("MOVE_DOWN"))) )
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("MOVE_DOWN"))) )
 		this->player->move(dt, 0.f, 1.f);
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key(this->keybinds.at("CLOSE"))))
@@ -65,9 +65,10 @@ void GameState::initKeybinds()
 
 void GameState::initTextures()
 {
-    sf::Texture temp;
-    temp.loadFromFile("Resources/Images/Sprites/Player/test.png");
-    this->textures["PLAYER_IDLE"] = temp;
+    if (!this->textures["PLAYER_IDLE"].loadFromFile("Resources/Images/Sprites/Player/test.png"))
+    {
+        throw "ERROR::GAME_STATE::COULD_NOT_LOAD_PLAYER_IDL_TEXTURE";
+    }
 }
 
 void GameState::initPlayers()

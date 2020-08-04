@@ -4,7 +4,7 @@ void Entity::initVariables()
 {
     this->texture       = nullptr;
     this->sprite        = nullptr;
-    this->movementSpeed = 1.f;
+    this->movementSpeed = 0.5f;
 }
 
 Entity::Entity()
@@ -21,7 +21,7 @@ Entity::~Entity()
 void Entity::createSprite(sf::Texture* texture)
 {
     this->texture = texture;
-    this->sprite = new sf::Sprite(*this->texture);
+    this->sprite  = new sf::Sprite(*this->texture);
 }
 
 
