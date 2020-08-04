@@ -16,7 +16,6 @@ public:
 	virtual ~GameState();
 
 	// Functions
-	void endState();
 
 	// Update
 	void updateInput(const float & dt);
