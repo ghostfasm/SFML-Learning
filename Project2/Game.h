@@ -7,10 +7,12 @@ class Game
 {
 private:
 	sf::RenderWindow *		   window = nullptr;
-	sf::Event				      sfEvent;
+	sf::Event				   sfEvent;
 	std::vector<sf::VideoMode> videoModes;
 	sf::ContextSettings		   windowSettings;
 	bool fullscreen;
+    
+	bool test =	1;
 
 	sf::Clock dtClock;
 	float		 dt;

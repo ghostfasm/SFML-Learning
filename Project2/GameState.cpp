@@ -51,7 +51,7 @@ void GameState::initKeybinds()
 
 	if (ifs.is_open())
 	{
-		std::string key = "";
+		std::string key  = "";
 		std::string key2 = "";
 
 		while (ifs >> key >> key2)

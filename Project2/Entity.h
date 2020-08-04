@@ -22,7 +22,7 @@ private:
 
 protected:
 	sf::RectangleShape shape;
-	float				    movementSpeed;
+	float			   movementSpeed;
 
 public:
 	Entity();

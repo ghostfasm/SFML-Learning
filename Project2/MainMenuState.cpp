@@ -3,7 +3,6 @@
 // Initializer functions
 void MainMenuState::initVariables()
 {
-
 }
 
 void MainMenuState::initBackground()
@@ -145,6 +144,7 @@ void MainMenuState::render(sf::RenderTarget * target)
 	mouseText.setPosition(this->mousePosView.x, this->mousePosView.y - 50);
 	mouseText.setFont(this->font);
 	mouseText.setCharacterSize(12);
+
 	std::stringstream ss;
 	ss << this->mousePosView.x << " " << this->mousePosView.y;
 	mouseText.setString(ss.str());

@@ -20,8 +20,8 @@ Button::Button(float x, float y, float width, float height,
 		this->shape.getPosition().y + (this->shape.getGlobalBounds().height / 2.f) - this->text.getGlobalBounds().height / 2.f
 	);
 
-	this->idleColor = idleColor;
-	this->hoverColor = hoverColor;
+	this->idleColor   = idleColor;
+	this->hoverColor  = hoverColor;
 	this->activeColor = activeColor;
 
 	this->shape.setFillColor(this->idleColor);
@@ -71,7 +71,7 @@ void Button::update(const sf::Vector2f mousePos)
 	}
 }
 
-void Button::render(sf::RenderTarget* target)
+void Button::render(sf::RenderTarget * target)
 {
 	target->draw(this->shape);
 	target->draw(this->text);
